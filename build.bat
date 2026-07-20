@@ -1,10 +1,10 @@
 @echo off
 setlocal EnableDelayedExpansion
-title HandyWorkstation Executable Builder
+title HandyWorkstation Product Executable Builder
 chcp 65001 >nul
 
 echo ===================================================
-echo     HandyWorkstation Executable Builder
+echo   HandyWorkstation Product Executable Builder
 echo ===================================================
 echo.
 
@@ -40,7 +40,7 @@ echo [*] Cleaning previous build artifacts...
 if exist "build" rmdir /s /q "build"
 if exist "dist" rmdir /s /q "dist"
 
-echo [*] Starting PyInstaller build...
+echo [*] Building Portable Single Executable Product...
 %PYTHON_CMD% -m PyInstaller HandyWorkstation.spec --noconfirm
 
 if !errorlevel! neq 0 (
@@ -53,7 +53,7 @@ if !errorlevel! neq 0 (
 echo.
 echo ===================================================
 echo  [SUCCESS] HandyWorkstation packaged successfully!
-echo  [Executable Path] dist\HandyWorkstation\HandyWorkstation.exe
+echo  [Product Executable] dist\HandyWorkstation.exe
 echo ===================================================
 echo.
 pause

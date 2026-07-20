@@ -80,9 +80,9 @@ def check_integration_tests() -> bool:
 
 def check_build_artifact() -> bool:
     print_step("4. 打包产物完备性校验 (Executable Build Check)")
-    exe_path = os.path.join(os.path.dirname(__file__), "dist", "HandyWorkstation", "HandyWorkstation.exe")
+    exe_path = os.path.join(os.path.dirname(__file__), "dist", "HandyWorkstation.exe")
     if not os.path.exists(exe_path):
-        print(f"[WARNING] 尚未打出 .exe 产物 ({exe_path})，请先运行 build.bat 打包！")
+        print(f"[WARNING] 尚未打出 .exe 单文件产品 ({exe_path})，请先运行 build.bat 打包！")
         return True
     
     res = subprocess.run([exe_path, "--test-all"], capture_output=True, text=True, encoding="utf-8")

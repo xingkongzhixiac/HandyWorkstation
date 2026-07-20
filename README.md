@@ -86,27 +86,22 @@ HandyWorkstation/
 
 ---
 
-## 📦 打包与软件分发 (Distribution)
+## 📦 产品级发布与安装包 (Product Distribution)
 
-本项目原生支持通过 **PyInstaller** 导出 Windows 免环境运行包：
+本项目支持打包为**真正独立的单文件免安装绿色版** (`.exe`)，无任何外部文件夹与依赖项：
 
-### 1. 打包步骤
-1. 双击运行 [build.bat](file:///e:/tools/selfDefinetion/HandyWorkstation/build.bat)。
-2. 打包产物自动输出至 `dist/HandyWorkstation/`。
+### 1. 软件安装与下载清单 (Release Packages)
 
-### 2. 打包产物目录清单 (Package Manifest)
-将 `dist/HandyWorkstation/` 整个目录压缩即可作为免安装独立软件包发布给最终用户：
+| 产品文件名称 | 格式类型 | 大小 | 适用对象 | 运行方式 |
+| :--- | :--- | :--- | :--- | :--- |
+| **`HandyWorkstation.exe`** | **独立单文件免安装版 (Portable)** | ~18 MB | 普通小白用户 / 即插即用 | **双击直接运行**，无需安装 Python |
+| **`build.bat`** | **本地一键打包编译脚本** | < 1 KB | 开发者 / 运维 | 双击自动生成最新单文件 `.exe` |
 
+### 2. 构建产物说明
+通过运行 [build.bat](file:///e:/tools/selfDefinetion/HandyWorkstation/build.bat) 生成的产品文件唯一路径为：
 ```text
-dist/HandyWorkstation/
-├── HandyWorkstation.exe            # 🚀 主程序唯一可执行文件入口 (双击即可启动)
-└── _internal/                      # 📦 运行时依赖与嵌入资源库
-    ├── rules.json                  # 📋 默认文件规格化归类规则库
-    ├── README.md                   # 📄 嵌入式产品说明文档
-    ├── python313.dll               # ⚙️ 嵌入式 Python 运行时 DLL
-    ├── tcl86t.dll / tk86t.dll     # 🎨 Tkinter 图形渲染引擎
-    ├── _tcl_data/ & _tk_data/      # 🖼️ GUI 界面样式数据包
-    └── base_library.zip            # 📚 Python 标准库依赖包
+dist/
+└── HandyWorkstation.exe            # 🚀 唯一产品文件 (集成 Tkinter、规则库 rules.json 与全量插件)
 ```
 
 ---
