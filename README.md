@@ -46,9 +46,8 @@ for/
 ## 🚀 启动与使用指南
 
 ### 1. 双击快捷运行 (推荐)
-双击运行 [run.bat](file:///E:/tools/selfDefinetion/for/run.bat)：
-- **选项 `1`**：一键对所有插件进行集成测试，验证其在当前环境是否连通（如 Everything 插件会检测本地 HTTP 服务并做物理搬运测试）。
-- **选项 `2`**：唤起图形化控制中心。
+- **快捷管理控制台**: 双击运行 [run.bat](file:///e:/tools/selfDefinetion/HandyWorkstation/run.bat) 进行启动、自测或搭建演示沙箱。
+- **流程门禁质量校验**: 双击运行 [check.bat](file:///e:/tools/selfDefinetion/HandyWorkstation/check.bat) 自动完成静态代码校验、防泄露检查、沙箱断言自测及 `.exe` 产物功能测试。
 
 ### 2. 命令行控制指令
 - **运行图形控制台**：
