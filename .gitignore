@@ -1,0 +1,6 @@
+.env
+__pycache__/
+*.pyc
+.ruff_cache/
+test_messy_dir/
+test_sandbox/

@@ -1,0 +1,184 @@
+{
+  "active_profile": "general",
+  "profiles": {
+    "general": [
+      {
+        "name": "Documents",
+        "patterns": ["*.pdf", "*.docx", "*.doc", "*.xlsx", "*.xls", "*.pptx", "*.ppt", "*.csv", "*.txt", "*.md", "*.epub"],
+        "description": "办公文档、学习资料与电子书",
+        "suffix_templates": {
+          ".pdf": "PDF 电子文档/书籍",
+          ".docx": "Word 办公文书/草稿",
+          ".doc": "旧版 Word 文档",
+          ".xlsx": "Excel 数据分析报表/电子表格",
+          ".xls": "旧版 Excel 数据表",
+          ".pptx": "PPT 演示汇报幻灯片",
+          ".ppt": "旧版 PPT 幻灯片",
+          ".csv": "CSV 逗号分隔数据表",
+          ".txt": "TXT 简易文本文档",
+          ".md": "Markdown 标记文档说明",
+          ".epub": "EPUB 移动端电子书"
+        }
+      },
+      {
+        "name": "Images",
+        "patterns": ["*.png", "*.jpg", "*.jpeg", "*.gif", "*.webp", "*.svg", "*.raw", "*.psd", "*.ai"],
+        "description": "个人照片、设计稿与图档资产",
+        "suffix_templates": {
+          ".png": "PNG 静态图片素材",
+          ".jpg": "JPG 照片/图档文件",
+          ".jpeg": "JPEG 静态图档",
+          ".gif": "GIF 动态图片资产",
+          ".webp": "WEBP 高压缩网络图片",
+          ".svg": "SVG 矢量图形素材",
+          ".psd": "Photoshop 设计源文件",
+          ".ai": "Illustrator 矢量设计源文件",
+          ".raw": "RAW 相机原始无损照片"
+        }
+      },
+      {
+        "name": "Videos",
+        "patterns": ["*.mp4", "*.mkv", "*.mov", "*.avi", "*.wmv", "*.flv"],
+        "description": "视频录像、影视娱乐与教程资源",
+        "suffix_templates": {
+          ".mp4": "MP4 通用视频录像",
+          ".mkv": "MKV 高清多媒体视频",
+          ".mov": "MOV 苹果设备录像视频",
+          ".avi": "AVI 经典音视频媒体",
+          ".wmv": "WMV 微软视窗流视频",
+          ".flv": "FLV Flash 流媒体视频"
+        }
+      },
+      {
+        "name": "Audios",
+        "patterns": ["*.mp3", "*.wav", "*.flac", "*.aac", "*.m4a", "*.wma"],
+        "description": "音乐、有声书与录音文件",
+        "suffix_templates": {
+          ".mp3": "MP3 压缩音频音乐",
+          ".wav": "WAV 无损录音音频",
+          ".flac": "FLAC 高保真无损音乐",
+          ".aac": "AAC 高压缩音频素材",
+          ".m4a": "M4A 苹果设备音频/录音",
+          ".wma": "WMA 微软音频媒体"
+        }
+      },
+      {
+        "name": "Archives",
+        "patterns": ["*.zip", "*.rar", "*.7z", "*.tar", "*.gz", "*.tgz"],
+        "description": "压缩归档、数据备份与打包文件",
+        "suffix_templates": {
+          ".zip": "ZIP 标准数据压缩包",
+          ".rar": "RAR 专有压缩归档",
+          ".7z": "7Z 高压缩比备份包",
+          ".tar": "TAR Linux打包归档",
+          ".gz": "GZ 压缩包",
+          ".tgz": "TGZ Linux系统归档包"
+        }
+      },
+      {
+        "name": "Installers",
+        "patterns": ["*.exe", "*.msi", "*.apk", "*.dmg", "*.pkg", "*.bat", "*.cmd"],
+        "description": "软件安装程序与可执行脚本",
+        "suffix_templates": {
+          ".exe": "Windows 软件/可执行程序",
+          ".msi": "Windows 安装引导包",
+          ".apk": "Android 安卓应用安装包",
+          ".dmg": "macOS 磁盘镜像文件",
+          ".pkg": "macOS 软件安装包",
+          ".bat": "Windows 批处理自动脚本",
+          ".cmd": "Windows 命令行自动脚本"
+        }
+      }
+    ],
+    "developer": [
+      {
+        "name": "components",
+        "patterns": ["*.jsx", "*.tsx", "*.vue", "*.svelte"],
+        "description": "UI 界面及前端组件",
+        "suffix_templates": {
+          ".jsx": "React Javascript 组件",
+          ".tsx": "React Typescript 强类型组件",
+          ".vue": "Vue 单文件 UI 组件",
+          ".svelte": "Svelte 响应式组件"
+        }
+      },
+      {
+        "name": "styles",
+        "patterns": ["*.css", "*.scss", "*.sass", "*.less"],
+        "description": "界面样式与主题文件",
+        "suffix_templates": {
+          ".css": "CSS 原生样式表",
+          ".scss": "Sass 预编译样式表",
+          ".sass": "Sass 缩进样式表",
+          ".less": "Less 样式表"
+        }
+      },
+      {
+        "name": "api_routes",
+        "patterns": ["*api*", "*router*", "*route*", "*controller*", "*handler*"],
+        "description": "后端接口与路由层"
+      },
+      {
+        "name": "utils",
+        "patterns": ["*utils*", "*helper*", "*tool*", "*.js", "*.ts"],
+        "description": "通用工具函数与脚本逻辑",
+        "suffix_templates": {
+          ".js": "JavaScript 业务源代码",
+          ".ts": "TypeScript 业务源代码"
+        }
+      },
+      {
+        "name": "configs",
+        "patterns": ["*.json", "*.yaml", "*.yml", "*.toml", "*.ini", "*.xml", ".*rc", "*config*"],
+        "description": "项目配置文件与环境变量",
+        "suffix_templates": {
+          ".json": "JSON 数据配置",
+          ".yaml": "YAML 项目部署配置",
+          ".yml": "YML 部署配置",
+          ".toml": "TOML 环境参数配置",
+          ".ini": "INI 系统参数初始化文件",
+          ".xml": "XML 结构化配置数据"
+        }
+      },
+      {
+        "name": "docs",
+        "patterns": ["*.md", "*.txt", "*.pdf", "LICENSE"],
+        "description": "项目文档与说明",
+        "suffix_templates": {
+          ".md": "项目 Markdown 开源文档说明",
+          ".txt": "TXT 部署自述说明"
+        }
+      },
+      {
+        "name": "assets",
+        "patterns": ["*.png", "*.jpg", "*.jpeg", "*.gif", "*.svg", "*.webp", "*.ico"],
+        "description": "媒体资源与图片",
+        "suffix_templates": {
+          ".png": "前端 PNG 图片素材",
+          ".jpg": "前端 JPG 图像资产",
+          ".svg": "前端 SVG 矢量图标",
+          ".ico": "网站 Favicon 图标"
+        }
+      },
+      {
+        "name": "database",
+        "patterns": ["*.sql", "*.db", "*.sqlite", "*.prisma"],
+        "description": "数据库脚本与迁移文件",
+        "suffix_templates": {
+          ".sql": "SQL 数据库结构表定义与初始化脚本",
+          ".db": "SQLite 数据物理库",
+          ".sqlite": "SQLite3 数据库文件",
+          ".prisma": "Prisma ORM 数据库定义 Schema"
+        }
+      }
+    ]
+  },
+  "default_folder": "others",
+  "constraints": {
+    "auto_lowercase_extension": true,
+    "clean_filename_whitespace": true,
+    "max_filename_length": 60,
+    "filter_garbage_temp": true,
+    "guess_missing_extensions": true
+  }
+}
