@@ -63,6 +63,18 @@ for/
 
 ---
 
+## 📦 项目一键打包 (Executable Packaging)
+
+本平台支持通过 **PyInstaller** 一键打包为免 Python 环境的独立 Windows 可执行文件 (`.exe`)。
+
+### 使用方法
+1. 双击运行 [build.bat](file:///e:/tools/selfDefinetion/HandyWorkstation/build.bat)。
+2. 脚本将自动检测环境、安装 `pyinstaller`、编译生成独立运行包。
+3. 打包产物位于：`dist/HandyWorkstation/HandyWorkstation.exe`。
+4. 将 `dist/HandyWorkstation` 目录分发或直接双击运行 `.exe` 即可。
+
+---
+
 ## 💡 开发一个新插件 (Plugin Developer Guide)
 
 如果您想为本平台添加一个全新的功能小工具，极其简单：

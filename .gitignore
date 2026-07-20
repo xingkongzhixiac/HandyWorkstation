@@ -4,3 +4,5 @@ __pycache__/
 .ruff_cache/
 test_messy_dir/
 test_sandbox/
+build/
+dist/
