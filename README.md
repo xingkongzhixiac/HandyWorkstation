@@ -91,22 +91,21 @@ HandyWorkstation/
 
 ---
 
-## 📦 产品级发布与安装包 (Product Distribution)
+## 📦 我应当怎样选择发行版
 
-本项目支持打包为**真正独立的单文件免安装绿色版** (`.exe`)，无任何外部文件夹与依赖项：
+| 版本 | 特征 | 链接 |
+| :--- | :--- | :--- |
+| **Stable** | 正式版，高可靠性，适合日常使用。 | [Release](https://github.com/xingkongzhixiac/HandyWorkstation/releases/latest) |
+| **Portable (.exe)** | 绿色单文件免安装版 (`HandyWorkstation.exe`)，无需 Python，双击即用。 | [HandyWorkstation.exe](https://github.com/xingkongzhixiac/HandyWorkstation/releases/download/v1.0.0/HandyWorkstation.exe) |
+| **AutoBuild** | 滚动更新版，适合测试反馈，自动构建。 | [AutoBuild](https://github.com/xingkongzhixiac/HandyWorkstation/actions) |
 
-### 1. 软件安装与下载清单 (Release Packages)
+---
 
-| 产品文件名称 | 格式类型 | 大小 | 适用对象 | 可执行文件/运行入口 |
-| :--- | :--- | :--- | :--- | :--- |
-| **[HandyWorkstation.exe](file:///e:/tools/selfDefinetion/HandyWorkstation/dist/HandyWorkstation.exe)** | **独立单文件免安装版 (Portable)** | ~18 MB | 普通小白用户 / 即插即用 | 🔗 **[点击运行 HandyWorkstation.exe](file:///e:/tools/selfDefinetion/HandyWorkstation/dist/HandyWorkstation.exe)** |
-| **[build.bat](file:///e:/tools/selfDefinetion/HandyWorkstation/build.bat)** | **本地一键打包编译脚本** | < 1 KB | 开发者 / 运维 | 双击运行自动编译最新 `.exe` |
-
-### 2. 构建产物说明
-通过运行 [build.bat](file:///e:/tools/selfDefinetion/HandyWorkstation/build.bat) 生成的产品文件唯一路径为：
+### 🔨 本地构建产物
+开发者运行 [build.bat](file:///e:/tools/selfDefinetion/HandyWorkstation/build.bat) 编译生成的本地产品路径为：
 ```text
 dist/
-└── HandyWorkstation.exe            # 🚀 唯一产品文件 (集成 Tkinter、规则库 rules.json 与全量插件)
+└── HandyWorkstation.exe            # 🚀 绿色单文件免安装程序 (可直接复制分发)
 ```
 
 ---
