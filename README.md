@@ -7,6 +7,11 @@
 
 轻量级、零外部依赖、微插件架构的 Windows 本地系统维护与实用工具集成控制台。
 
+> [!IMPORTANT]
+> **🚀 软件免安装直接运行入口 (Portable Executable)**:
+> 本项目已编译出独立单文件 `.exe` 桌面程序，无需 Python 环境，双击即可直接启动：
+> 🔗 **[点击直接运行 HandyWorkstation.exe 软件](file:///e:/tools/selfDefinetion/HandyWorkstation/dist/HandyWorkstation.exe)** （位于 `dist/HandyWorkstation.exe`）
+
 ---
 
 ## 🌟 核心特性 (Key Features)
@@ -92,10 +97,10 @@ HandyWorkstation/
 
 ### 1. 软件安装与下载清单 (Release Packages)
 
-| 产品文件名称 | 格式类型 | 大小 | 适用对象 | 运行方式 |
+| 产品文件名称 | 格式类型 | 大小 | 适用对象 | 可执行文件/运行入口 |
 | :--- | :--- | :--- | :--- | :--- |
-| **`HandyWorkstation.exe`** | **独立单文件免安装版 (Portable)** | ~18 MB | 普通小白用户 / 即插即用 | **双击直接运行**，无需安装 Python |
-| **`build.bat`** | **本地一键打包编译脚本** | < 1 KB | 开发者 / 运维 | 双击自动生成最新单文件 `.exe` |
+| **[HandyWorkstation.exe](file:///e:/tools/selfDefinetion/HandyWorkstation/dist/HandyWorkstation.exe)** | **独立单文件免安装版 (Portable)** | ~18 MB | 普通小白用户 / 即插即用 | 🔗 **[点击运行 HandyWorkstation.exe](file:///e:/tools/selfDefinetion/HandyWorkstation/dist/HandyWorkstation.exe)** |
+| **[build.bat](file:///e:/tools/selfDefinetion/HandyWorkstation/build.bat)** | **本地一键打包编译脚本** | < 1 KB | 开发者 / 运维 | 双击运行自动编译最新 `.exe` |
 
 ### 2. 构建产物说明
 通过运行 [build.bat](file:///e:/tools/selfDefinetion/HandyWorkstation/build.bat) 生成的产品文件唯一路径为：
