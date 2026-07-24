@@ -21,3 +21,8 @@
   - **`agentic-tdd-orchestrator` (TDD 测试门禁)**：强制执行测试先行，用 Assert 断言守门，禁止无断言空跑。
   - **`writing-clearly-and-concisely` (精炼写作)**：确保文档与日志精简无 AI 废话。
 - **禁绝项目级自造**：严禁在项目级自创、重写任何与上述全局行规同类的技能模块。仅允许维护项目特色插件业务级扩展。
+
+## 5. 多平台技能共享排查制约 (Shared-Skills Standard Operating Procedure)
+- **全局工具优先检测**：排查或检索 Agent 跨平台/跨 CLI (WSL/IDE/终端) 技能与配置共享时，**必须首先运行全局工具检查**（如 `npm list -g --depth=0` 识别 `shareskills`）。
+- **单源链接架构**：所有跨 Agent 技能共享统一通过 `shareskills` 的 Central Hub 及符号链接 (Symlink/Junction) 进行管理，禁止直接硬编码或私自在包缓存中分裂衍生。
+
